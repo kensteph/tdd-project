@@ -17,7 +17,7 @@ describe Solver do
     end
 
     it 'Should accept 0 and positive integers' do
-      expect(@solver.factorial(-8)).to raise_error 'Should be greatter or equal to 0'
+      expect{@solver.factorial(-8)}.to raise_error('Should be greatter or equal to 0')
     end
   end
 
