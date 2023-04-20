@@ -29,4 +29,30 @@ describe Solver do
       expect(readed_word).to eql 'olleh'
     end
   end
+
+  describe '#fizzbuzz'
+    it 'Should  return "fizz" When N is divisible by 3.' do
+      readed_result = @solver.fizzbuzz(9)
+      
+      expect(readed_result).to eql 'fizz'
+    end
+
+    it 'Should  return "buzz" When N is divisible by 5.' do
+      readed_result = @solver.fizzbuzz(10)
+      
+      expect(readed_result).to eql 'buzz'
+    end
+
+    it 'Should  return "fizzbuzz" When N is divisible by 3 and 5.' do
+      readed_result = @solver.fizzbuzz(15)
+      
+      expect(readed_result).to eql 'fizzbuzz'
+    end
+
+    it 'Should  return N When N is not divisible by 3 nor 5.' do
+      readed_result = @solver.fizzbuzz(7)
+      
+      expect(readed_result).to eql 7
+    end
+  end
 end
