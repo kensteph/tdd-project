@@ -10,4 +10,22 @@ class Solver
   def reverse(word)
     word.reverse    
   end
+
+  def fizzbuzz(number)
+    selector = 4
+    selector = 1 if (number%3 == 0) 
+    selector = 2 if (number%5 == 0)
+    selector = 3 if (number%3 == 0 && number%5 == 0) 
+
+      case selector
+      when 1 
+        'fizz'
+      when 2 
+        'buzz'
+      when 3 
+        'fizzbuzz'
+      else 
+        number
+    end
+  end
 end

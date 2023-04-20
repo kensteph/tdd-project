@@ -30,7 +30,7 @@ describe Solver do
     end
   end
 
-  describe '#fizzbuzz'
+  describe '#fizzbuzz' do
     it 'Should  return "fizz" When N is divisible by 3.' do
       readed_result = @solver.fizzbuzz(9)
       
