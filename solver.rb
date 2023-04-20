@@ -6,4 +6,8 @@ class Solver
     (1..number).each { |val| facto*=val}
     facto
   end
+
+  def reverse(word)
+    word.reverse    
+  end
 end
