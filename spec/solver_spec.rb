@@ -1,4 +1,4 @@
-require_relative '../solver.rb'
+require_relative '../solver'
 
 describe Solver do
   before :each do
@@ -18,7 +18,7 @@ describe Solver do
     end
 
     it 'Should accept 0 and positive integers' do
-      expect{@solver.factorial(-8)}.to raise_error('Should be greatter or equal to 0')
+      expect { @solver.factorial(-8) }.to raise_error('Should be greatter or equal to 0')
     end
   end
 
@@ -33,25 +33,25 @@ describe Solver do
   describe '#fizzbuzz' do
     it 'Should  return "fizz" When N is divisible by 3.' do
       readed_result = @solver.fizzbuzz(9)
-      
+
       expect(readed_result).to eql 'fizz'
     end
 
     it 'Should  return "buzz" When N is divisible by 5.' do
       readed_result = @solver.fizzbuzz(10)
-      
+
       expect(readed_result).to eql 'buzz'
     end
 
     it 'Should  return "fizzbuzz" When N is divisible by 3 and 5.' do
       readed_result = @solver.fizzbuzz(15)
-      
+
       expect(readed_result).to eql 'fizzbuzz'
     end
 
     it 'Should  return N When N is not divisible by 3 nor 5.' do
       readed_result = @solver.fizzbuzz(7)
-      
+
       expect(readed_result).to eql 7
     end
   end
