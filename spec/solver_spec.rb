@@ -4,6 +4,7 @@ describe Solver do
   before :each do
     @solver = Solver.new
   end
+
   describe '#factorial' do
     it 'Should return 24 if the given integer is 4' do
       facto = @solver.factorial(4)
@@ -21,4 +22,11 @@ describe Solver do
     end
   end
 
+  describe '#reverse' do
+    it 'Should return reversed word' do
+      readed_word = @solver.reverse('hello')
+
+      expect(readed_word).to eql 'ollh'
+    end
+  end
 end
