@@ -26,7 +26,7 @@ describe Solver do
     it 'Should return reversed word' do
       readed_word = @solver.reverse('hello')
 
-      expect(readed_word).to eql 'ollh'
+      expect(readed_word).to eql 'olleh'
     end
   end
 end
